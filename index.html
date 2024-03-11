@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In/Sign Up Page | Dan Aleko</title>
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form" id="loginForm">
+            <h1>Sign In</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class='bx bxl-google-plus'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <div class="form-message-container">
+                <span>Or use your email and password</span>
+            </div>
+
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign In</button>
+                <a href="#">Forgot Your Password?</a>
+            </form>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+        </div>
+        <div class="signup-form hidden" id="signupForm">
+            <h1>Create An Account</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class='bx bxl-google-plus'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                <a href="#" class="icon"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="form-message-container">
+                <span>Or use your email for registration</span>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Sign In</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
